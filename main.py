@@ -35,7 +35,7 @@ Reply with a risk level (Low, Medium, High) and explain why.
 """
 
         response = openai.ChatCompletion.create(
-            model="gpt-4",
+            model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are an expert fraud detector for online listings."},
                 {"role": "user", "content": prompt}
